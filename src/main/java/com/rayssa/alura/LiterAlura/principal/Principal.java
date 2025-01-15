@@ -43,19 +43,19 @@ public class Principal {
 
             switch (opcao){
                 case 1:
-                    buscarLivro();
+                    buscarLivros();
                     break;
                 case 2:
-                    listregisteredbooks();
+                    listarRegistroDeLivros();
                     break;
                 case 3:
-                    listregisteredAuthor();
+                    ListarRegistroDeAutores();
                     break;
                 case 4:
-                    listofactorsalive();
+                    listarAutoresVivosEmAno();
                     break;
                 case 5:
-                    listbookinlanguage();
+                    listarLivrosEmIdioma();
                     break;
                 case 0:
                     System.out.println("Encerrando.......");
@@ -67,8 +67,9 @@ public class Principal {
         }
     }
 
-    private void listbookinlanguage() {
-        System.out.println("Encontrar livro em um determinado idioma!");
+    private void listarLivrosEmIdioma() {
+        System.out.println("Encontrar livro em um determinado idioma");
+        System.out.println("Digite a sigla do idioma: ");
         var idioma = leitura.nextLine();
         List<Book> books = repository.findAll();
         List<Book> livrosEncontrados = books.stream()
@@ -79,8 +80,9 @@ public class Principal {
         } else { livrosEncontrados.forEach(System.out::println); }
     }
 
-    private void listofactorsalive() {
-        System.out.println("Encontar autor vivo em determinado ano!");
+    private void listarAutoresVivosEmAno() {
+        System.out.println("Encontrar autores vivos em determinado ano");
+        System.out.println("Digite o ano: ");
         var ano = leitura.nextInt();
         author = authorsRepository.findAll();
         author.stream()
@@ -88,19 +90,19 @@ public class Principal {
                 .forEach(System.out::println);
     }
 
-    private void listregisteredAuthor() {
+    private void ListarRegistroDeAutores() {
         author = authorsRepository.findAll();
         author.forEach(System.out::println);
     }
 
-    private void listregisteredbooks() {
+    private void listarRegistroDeLivros() {
         books = repository.findAll();
         books.stream()
                 .sorted(Comparator.comparing(Book::getTitulo))
                 .sorted(Comparator.comparing(Book::getName)).forEach(System.out::println);
     }
 
-    private void buscarLivro() {
+    private void buscarLivros() {
         var dadosbook = getDadosBooks().result().stream()
                 .flatMap(book -> book.autor().stream()
                         .map(autho ->
