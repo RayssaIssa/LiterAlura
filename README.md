@@ -26,10 +26,10 @@ A API utilizada é gratuita e possui um amplo acervo de livros de diversos paise
 
 - Na opção 4 é possível fazer uma pesquisa, dentre os autores que estão cadastrados no banco de dados, sobre quais estavam vivos em determinado ano.
 
-  ![image](https://github.com/user-attachments/assets/f9505105-55ca-4009-9a39-c79464eb9991)
+  ![image](https://github.com/user-attachments/assets/42cded0e-4743-467e-8636-fa7ca0812126)
 
 - Na opção 5 é possível listar todos os livros que foram escritos em determinado idioma.
 
-  ![image](https://github.com/user-attachments/assets/20a6e3b1-f84f-4bf4-95d4-744d05d7393d)
+  ![image](https://github.com/user-attachments/assets/4d79b2ff-e9b7-4ba3-b4eb-2e897f4389c6)
 
 ----
