@@ -2,6 +2,8 @@
 ### Challenge LiterAlura - Challenge ONE - Java -Back-End
 🚀 Projeto desenvolvido durante o Challenge ONE T7 (2024).
 
+---
+
 Desenvolvido <b>Java com Spring</b>, o banco de dados <b>PostgresSQL</b> e a API <a href="https://gutendex.com/">Gutendex</a>, esse projeto realiza interação com o usuário via terminal e possui 5 opções disponíveis: 
 - Buscar livros pelo titulo
 - Listar livros registrados
